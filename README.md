@@ -15,7 +15,7 @@ docker-compose run --rm binderscan -r [CIDR]
 docker-compose run --rm binderscan -r [CIDR],[CIDR],[CIDR],[CIDR]
 ```
 
-Results are saved into `logs/discovery-outfile-run-on-<timestamp>.csv
+Results are saved into `logs/discovery-outfile-run-on-\<timestamp\>.csv
 
 # USAGE
 
