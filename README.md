@@ -10,7 +10,7 @@ git clone https://github.com/xkillbit/BinderScanDoc.git; cd BinderScanDoc
 docker-compose run --rm binderscan -r [CIDR]
 ```
 
-#### Example Command with defaults against multiple CIDRs
+### Example Command with defaults against multiple CIDRs
 ```bash
 docker-compose run --rm binderscan -r [CIDR],[CIDR],[CIDR],[CIDR]
 ```
