@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  binderscan:
+    build: .
+    container_name: binderscan
+    network_mode: host
+    cap_add:
+      - NET_RAW
+    volumes:
+      - ./logs:/app/logs
+    entrypoint: ["python", "/app/binderscan.py"]
