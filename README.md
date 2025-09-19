@@ -24,9 +24,9 @@ usage: docker-compose run --rm binderscan [-h] -r IP_RANGE [-u] [-n] [-a] [-p]
 
 Network discovery scanner (fping + nmap + masscan)
 
-options:
+Options:
   -h, --help            show this help message and exit
-  -r IP_RANGE, --range IP_RANGE
+  -r                    IP_RANGE, --range IP_RANGE
                         ENTER NETWORK CIDR RANGE - e.g., 192.168.0.0/24
   -u, --no-udp          Disable async UDP probes (masscan)
   -n, --no-nmap         Disable nmap TCP probes
