@@ -10,7 +10,7 @@ cd BinderScanDoc
 docker-compose run --rm binderscan -r [CIDR]
 ```
 
-## Example Command - Multiple CIDRs
+## Example Commands - Multiple CIDRs
 ```bash
 cat ranges.txt
 192.1.1.0/24
