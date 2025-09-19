@@ -22,7 +22,7 @@ Results are saved into `logs/discovery-outfile-run-on-<timestamp>.csv`
 ```bash
 usage: docker-compose run --rm binderscan [-h] -r IP_RANGE [-u] [-n] [-a] [-p]
 
-Network discovery scanner (fping + nmap + masscan)
+Network discovery smart scanner (fping + nmap + masscan)
 
 Options:
   -h, --help            show this help message and exit
