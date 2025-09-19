@@ -1,12 +1,25 @@
 # Run the following commands to use after cloning:
 
+## Change Directory
 ```bash
 cd BinderScanDoc
 ```
 
-## Example
+## Example Command with defaults against the CIDR of your choice
 ```bash
-docker compose run --rm binderscan -r [CIDR]
+docker-compose run --rm binderscan -r [CIDR]
+```
+
+## Example Command - Multiple CIDRs
+```bash
+cat ranges.txt
+192.1.1.0/24
+192.1.2.0/24
+192.1.3.0/24
+```
+
+```bash
+for range in $(cat ranges.txt);do docker-compose run --rm binderscan -r $range;done
 ```
 
 Results are saved into `logs/discovery-outfile-run-on-<timestamp>.csv
