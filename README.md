@@ -10,16 +10,9 @@ cd BinderScanDoc
 docker-compose run --rm binderscan -r [CIDR]
 ```
 
-## Example Commands - Multiple CIDRs
+### Example Command with defaults against multiple CIDRs
 ```bash
-cat ranges.txt
-192.1.1.0/24
-192.1.2.0/24
-192.1.3.0/24
-```
-
-```bash
-for range in $(cat ranges.txt);do docker-compose run --rm binderscan -r $range;done
+docker-compose run --rm binderscan -r [CIDR],[CIDR],[CIDR],[CIDR]
 ```
 
 Results are saved into `logs/discovery-outfile-run-on-<timestamp>.csv
@@ -27,7 +20,7 @@ Results are saved into `logs/discovery-outfile-run-on-<timestamp>.csv
 # USAGE
 
 ```bash
-usage: binderscan.py [-h] -r IP_RANGE [-u] [-n] [-a] [-p]
+usage: docker-compose run --rm binderscan [-h] -r IP_RANGE [-u] [-n] [-a] [-p]
 
 Network discovery scanner (fping + nmap + masscan)
 
