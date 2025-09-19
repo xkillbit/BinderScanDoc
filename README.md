@@ -1,16 +1,16 @@
-# Run the following commands to use after cloning:
+# Run the following commands:
 
-## Change Directory
+## Clone and Change Directory
 ```bash
-cd BinderScanDoc
+git clone https://github.com/xkillbit/BinderScanDoc.git; cd BinderScanDoc
 ```
 
-## Example Command with defaults against the CIDR of your choice
+### Example Command with defaults against the CIDR of your choice
 ```bash
 docker-compose run --rm binderscan -r [CIDR]
 ```
 
-### Example Command with defaults against multiple CIDRs
+#### Example Command with defaults against multiple CIDRs
 ```bash
 docker-compose run --rm binderscan -r [CIDR],[CIDR],[CIDR],[CIDR]
 ```
