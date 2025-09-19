@@ -1,16 +1,19 @@
 # Run the following commands to use after cloning:
 
-`cd BinderScanDoc`
+```bash
+cd BinderScanDoc
+```
 
-`docker compose run --rm binderscan -r [CIDR]`
+## Example
+```bash
+docker compose run --rm binderscan -r [CIDR]
+```
 
 Results are saved into `logs/discovery-outfile-run-on-<timestamp>.csv
 
 # USAGE
 
 ```bash
-docker-compose run --rm binderscan -h
-
 usage: binderscan.py [-h] -r IP_RANGE [-u] [-n] [-a] [-p]
 
 Network discovery scanner (fping + nmap + masscan)
