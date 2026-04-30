@@ -43,7 +43,7 @@ def get_samples(host_ips, percentage):
     count = max(1, int(len(host_ips) * percentage))
     chosen1 = set(random.sample(host_ips, count))
     remaining1 = set(host_ips) - chosen1
-    chosen2 = set(random.sample(remaining1, count)) if remaining1 else set()
+    chosen2 = set(random.sample(sorted(remaining1), count)) if remaining1 else set()
     remaining2 = remaining1 - chosen2
     chosen3 = set(random.sample(remaining2, count)) if remaining2 else set()
     return [list(map(str, s)) for s in (chosen1, chosen2, chosen3)]
